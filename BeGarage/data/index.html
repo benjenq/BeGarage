@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>車庫遙控器</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+     <!-- <div class="backgroundImage"></div> -->
+        <div class="mainblock">
+            <div class="divtitle">
+                <img class="baricon" src="favicon.ico">
+                <span class="title" id="title">車庫遙控器</span>
+            </div>
+            <div class="divbuttons">
+                <div class="divbutton"><button buttonname="buttonup" id="btnup"></button><label class="buttonlabel">開車庫</label></div>
+                <div class="divbutton"><button buttonname="buttonstop" id="btnstop"></button><label class="buttonlabel">停止</label></div>
+                <div class="divbutton"><button buttonname="buttondown" id="btndown"></button><label class="buttonlabel">關車庫</label></div>
+                <!-- <div class="divloading"><img id="loading" src="images/icon_loading.gif"></div> -->
+            </div>
+
+            <div class="divstatus">
+                <label class="resultstring"></label>
+                
+                <!--
+                <img id="iconacstatus" class="statusicon" src="images/icon_power.png"><span id="infoacpowerstatus" class="infotext">---</span>
+                <img id="icontemputure" class="statusicon" src="images/icon_temputure.png"><span id="infotemperature" class="infotext">--.-℃</span>
+                <img id="iconhumidity" class="statusicon" src="images/icon_humidity.png"><span id="infohumidity" class="infotext">--.--%</span> 
+                -->
+            </div>
+            
+        </div>
+    <label class="copyright">Copyright © Ben Cheng 2020, All Rights Reserved</label>
+    
+
+</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/function.js"></script>
+</html>

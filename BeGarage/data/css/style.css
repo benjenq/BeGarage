@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css); 
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+*/
+
+@import url(notosanstc.css);
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+    background-image: url('../images/bgimg.png');
+    background-position: center;
+    background-repeat: repeat; 
+}
+
+.backgroundImage {
+    background-image: url('../images/bgimg.png');
+    background-position: center;
+    background-repeat: repeat;
+    /* Full height */
+} 
+
+/* 主界面 */
+
+.mainblock {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 150px);
+    margin-top: 20px;
+    width: 300px;
+    background: rgba(64, 64, 64, 0.40);
+    border-radius: 10px;
+    box-shadow: 0px 5px 60px rgba(0, 0, 0, 87), 0px 2px 15px rgba(182, 210, 219, 0.87) inset;
+    z-index: 10;
+}
+
+/* 上方標題 */
+
+.divtitle {
+    display: block;
+    width: 100%;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.92);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.divtitle .baricon {
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 7px
+}
+
+.title {
+    height: 100%;
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 5px;
+    vertical-align: super;
+
+}
+
+/* 中央按鈕 */
+
+.divbuttons {
+    
+}
+.divbutton {
+    display: block;
+    position: relative;
+    width: 70%;
+
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btnup {
+    background-image: url('../images/btnup.png');
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: 32px 32px;
+}
+#btnstop {
+    background-image: url('../images/btnstop.png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 28px 28px;
+    
+}
+#btndown {
+    background-image: url('../images/btndown.png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 32px 32px;
+}
+
+.divbuttons button {
+    display: inline-block;
+    background: #0064ed;
+
+    color: white;
+    width: 40px;
+    height: 40px;
+   
+    border: 1px solid rgba(201, 201, 201, 0.35);
+    border-radius: 20px;
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.0001,1.0001);
+    transition: box-shadow 0.3s, transform 0.3s,background 0.3s,filter 0.3s;
+}
+
+.divbuttons button:hover {
+    background: #008900;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.87), 0px 0px 5px rgba(223, 223, 203, 0.85) inset;
+    transform: scale(1.1,1.1);
+
+}
+
+.divbuttons button:active {
+    background: #a20909;
+    transform: scale(1.05,1.05);
+    filter:blur(0.5px);
+}
+
+.divbuttons button:disabled{
+    background: #5c5c5c;
+    filter:blur(2px);
+}
+
+
+.buttonlabel {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    vertical-align: super;
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: 200;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.77);
+    
+}
+
+.resultstring {
+    font-size: 18px;
+    font-weight: 100;     
+}
+
+.copyright {
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 100;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    color: white;
+   
+}
+
+/* 菊花 */
+
+.divloading {
+    text-align: center;
+}
+
+#loading {
+    width: 30px;
+    height: auto;
+}
+
+/* 下方狀態 */
+
+.divstatus {
+    display: block;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.statusicon {
+    width: 22px;
+    height: auto;
+    margin-left: 9px;
+    margin-top: 4px;
+}
+
+#iconacstatus {
+    cursor: pointer;
+}
+
+.infotext {
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    top: -5px;
+    margin-left: 3px;
+
+}
+
+#infoacpowerstatus {
+    cursor: pointer;
+}
+
+@media (max-width: 320px) {}
+
+@media (max-width: 640px) {}
+
+
